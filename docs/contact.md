@@ -1,22 +1,23 @@
 ---
 layout: default
-title: Contact
+title: Contato
 permalink: /contact
 ---
 
-# Contact
+# Contato
 
-Get in touch with the Exotic Server team.
+Entre em contato com a equipe do Exotic Server.
 
 <div class="contact-card">
 
+
+</div>
+
 **Email**  
-[contact@exoticservers.net](mailto:contact@exoticservers.net)
+[contato@exoticservers.net](mailto:contato@exoticservers.net)
 
 **Discord**  
-[Join our Discord server](https://discord.gg/exoticservers)
+[Entre no nosso servidor do Discord](https://discord.gg/exoticservers)
 
 **GitHub**  
 [exotic-group/mc-exotic-server](https://github.com/exotic-group/mc-exotic-server)
-
-</div>

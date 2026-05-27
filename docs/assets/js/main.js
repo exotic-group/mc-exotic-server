@@ -17,16 +17,16 @@ document.addEventListener('DOMContentLoaded', function () {
     btn.addEventListener('click', function () {
       var text = btn.getAttribute('data-copy');
       navigator.clipboard.writeText(text).then(function () {
-        btn.textContent = 'Copied!';
+        btn.textContent = 'Copiado!';
         btn.classList.add('command__copy--copied');
         setTimeout(function () {
-          btn.textContent = 'Copy';
+          btn.textContent = 'Copiar';
           btn.classList.remove('command__copy--copied');
         }, 2000);
       }).catch(function () {
-        btn.textContent = 'Error';
+        btn.textContent = 'Erro';
         setTimeout(function () {
-          btn.textContent = 'Copy';
+          btn.textContent = 'Copiar';
         }, 1500);
       });
     });
