@@ -5,7 +5,7 @@ permalink: /
 ---
 
 <div class="hero">
-  <img src="{{ '/assets/images/tiger.png' | relative_url }}" alt="Mascote do Exotic Server">
+  <img src="{{ '/assets/images/tigre.png' | relative_url }}" alt="Mascote do Exotic Server">
 </div>
 
 {% capture intro_content %}
