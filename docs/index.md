@@ -10,12 +10,14 @@ permalink: /
 
 {% capture intro_content %}
 
-<p>Endereço do servidor: <code>play.exoticservers.net</code></p>
+<h1>Bem-vindo ao Exotic Server!</h1>
+<p>Endereço do servidor: play.exoticservers.net</p>
 
-<ul>
-  <li><strong>Java Edition</strong> (1.21+): Adicione o servidor no menu Multijogador</li>
-  <li><strong>Bedrock Edition</strong>: Em breve</li>
-</ul>
+<h1> Test </h1>
+<h2> Test </h2>
+<h3> Test </h3>
+
+<p><strong>Java Edition</strong> (26.1+): Adicione o servidor no menu Multijogador</p>
 
 <p>Baixe e instale o modpack <a href="{{ '/assets/Exotic-Pack.mrpack' | relative_url }}">Exotic Pack (Client)</a>.</p>
 
