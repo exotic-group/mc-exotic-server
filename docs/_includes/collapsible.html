@@ -1,4 +1,4 @@
-<div class="collapsible" data-collapsible>
+<div class="collapsible{% if include.open == 'true' %} collapsible--open{% endif %}" data-collapsible>
   <div class="collapsible__header" data-collapsible-toggle>
     <h2>{{ include.title }}{% if include.wip %}<span class="wip-badge">WIP</span>{% endif %}</h2>
     <svg class="collapsible__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -6,6 +6,8 @@
     </svg>
   </div>
   <div class="collapsible__body">
-    {{ include.content }}
+    <div class="collapsible__inner">
+      {{ include.content }}
+    </div>
   </div>
 </div>
