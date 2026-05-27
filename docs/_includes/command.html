@@ -1,0 +1,7 @@
+<div class="command">
+  <code class="command__code">{{ include.cmd }}</code>
+  <button class="command__copy" data-copy="{{ include.cmd | xml_escape }}" aria-label="Copy command">Copy</button>
+  {% if include.desc %}
+  <div class="command__desc">{{ include.desc | markdownify }}</div>
+  {% endif %}
+</div>

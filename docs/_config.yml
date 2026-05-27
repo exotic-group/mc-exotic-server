@@ -1,0 +1,9 @@
+title: Exotic Server
+description: Minecraft Exotic Server — tutorials, commands, and live map
+baseurl: ""
+url: ""
+
+markdown: kramdown
+
+sass:
+  style: compressed

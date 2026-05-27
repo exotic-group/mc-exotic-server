@@ -1,0 +1,6 @@
+<nav class="site-nav">
+  {% assign current = page.url %}
+  <a href="{{ '/' | relative_url }}"{% if current == '/' or current contains '/index' %} class="active"{% endif %}>Home</a>
+  <a href="{{ '/map' | relative_url }}"{% if current contains '/map' %} class="active"{% endif %}>Map</a>
+  <a href="{{ '/contact' | relative_url }}"{% if current contains '/contact' %} class="active"{% endif %}>Contact</a>
+</nav>

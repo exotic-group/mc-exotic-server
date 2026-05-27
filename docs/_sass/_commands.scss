@@ -1,0 +1,55 @@
+.command {
+  position: relative;
+  background: darken($bg-darkgrey, 2%);
+  border: 1px solid rgba($plum, 0.4);
+  border-left: 4px solid $plum;
+  border-radius: 6px;
+  margin: 1rem 0;
+  overflow: hidden;
+
+  &__code {
+    display: block;
+    padding: 0.85rem 1rem;
+    padding-right: 3rem;
+    font-family: $font-mono;
+    font-size: 0.9rem;
+    color: $turquoise;
+    white-space: pre-wrap;
+    word-break: break-word;
+    line-height: 1.5;
+  }
+
+  &__copy {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background: rgba($text-body, 0.1);
+    border: 1px solid rgba($text-body, 0.2);
+    color: $text-body;
+    border-radius: 4px;
+    padding: 4px 8px;
+    font-size: 0.75rem;
+    cursor: pointer;
+    transition: background 0.15s, color 0.15s, border-color 0.15s;
+
+    &:hover {
+      background: rgba($plum, 0.2);
+      border-color: $plum;
+      color: $plum;
+    }
+
+    &--copied {
+      background: rgba($turquoise, 0.15);
+      border-color: $turquoise;
+      color: $turquoise;
+    }
+  }
+
+  &__desc {
+    padding: 0.5rem 1rem 0.85rem;
+    color: $text-body;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    border-top: 1px solid rgba($plum, 0.2);
+  }
+}
