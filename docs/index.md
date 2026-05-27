@@ -5,21 +5,21 @@ permalink: /
 ---
 
 <div class="hero">
-  <img src="{{ '/assets/images/tigre.png' | relative_url }}" alt="Mascote do Exotic Server">
+  <img src="{{ '/assets/images/tigre-bg.png' | relative_url }}" alt="Mascote do Exotic Server">
 </div>
 
 {% capture intro_content %}
 
 <h1>Bem-vindo ao Exotic Server!</h1>
-<p>Endereço do servidor: play.exoticservers.net</p>
+<h2>Endereço do servidor: <a class="orange-text copy-link" href="play.exoticservers.net">play.exoticservers.net</a></h2>
 
-<h1> Test </h1>
-<h2> Test </h2>
-<h3> Test </h3>
+<p><strong>Java Edition</strong> (26.1+)</p>
 
-<p><strong>Java Edition</strong> (26.1+): Adicione o servidor no menu Multijogador</p>
+<p>Baixe e instale o modpack <a href="{{ '/assets/Exotic-Pack.mrpack' | relative_url }}">Exotic Pack (Client)</a>
+ usando o Launcher <a href="https://modrinth.com/" target="_blank" class="plum-text">Modrinth</a>.</p>
 
-<p>Baixe e instale o modpack <a href="{{ '/assets/Exotic-Pack.mrpack' | relative_url }}">Exotic Pack (Client)</a>.</p>
+<p> O nosso modpack tem foco em <strong class="plum-text"> Vanilla+ </strong>, inclui principalmente mods para melhorar a performance e o visual do jogo como o <strong class="turquoise-text">Voxy, Continuity, Entity Model Features, etc</strong>.
+  Quality of Life como <strong class="turquoise-text">Xaero's Maps, Zoomify, Trash Slot</strong> e Alguns mods de gameplay e geração de mundo e biomas, como o <strong class="turquoise-text">Tectonic, Terralith, Friends & Foes, Ecologics</strong>.  </p>
 
 {% endcapture %}
 {% include collapsible.html title="Introdução" content=intro_content open="true" %}
@@ -27,11 +27,18 @@ permalink: /
 {% capture commands_content %}
 
 {% include command.html cmd='/help' desc='Mostra os comandos disponíveis.' %}
-{% include command.html cmd='/home' desc='Teleporta para sua casa definida.' %}
-{% include command.html cmd='/sethome' desc='Define sua casa na posição atual.' %}
+{% include command.html cmd='/home set &lt;nome home&gt;' desc='Cria um TP para sua casa de acordo com o nome' %}
+{% include command.html cmd='/home &lt;nome home&gt;' desc='Teleporta para sua /home definida, se nenhum nome for informado, teleporta para a home padrão' %}
+{% include command.html cmd='/home delete &lt;nome home&gt;' desc='Deleta a home especificada.' %}
+{% include command.html cmd='/home list' desc='Lista suas homes.' %}
+{% include command.html cmd='/warp *' desc='similar ao home em sintaxe para TPs do servidor.' %}
 {% include command.html cmd='/spawn' desc='Teleporta ao spawn do servidor.' %}
-{% include command.html cmd='/tpa &lt;jogador&gt;' desc='Solicita teleporte para outro jogador.' %}
-{% include command.html cmd='/msg &lt;jogador&gt; &lt;mensagem&gt;' desc='Envia uma mensagem privada para um jogador.' %}
+{% include command.html cmd='/tpa &lt;jogador&gt;' desc='Solicita teleporte seu para outro jogador.' %}
+{% include command.html cmd='/tpahere &lt;jogador&gt;' desc='Solicita teleporte de outro jogador para sua localização.' %}
+{% include command.html cmd='/tpa accept' desc='Aceita pedido de TP de outro Jogador.' %}
+{% include command.html cmd='/tpa deny' desc='Recusa pedido de TP de outro Jogador.' %}
+{% include command.html cmd='Claim de Terreno' desc='Para realizar o claim de terreno é necessário usar uma enxada de ouro.' %}
+<a href="https://wiki.blazing-coop.net/flan/user_guides/Getting-Started" class="turquoise-text">Tutorial Claim</a>
 
 {% endcapture %}
 {% include collapsible.html title="Comandos Básicos" content=commands_content %}

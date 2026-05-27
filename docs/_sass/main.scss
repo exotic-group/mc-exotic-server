@@ -65,12 +65,10 @@ p {
 .hero {
   text-align: center;
   padding: 2rem 0 1rem;
-
+  margin-bottom: 1rem;
   img {
     max-width: 100%;
-    max-height: 360px;
-    border-radius: 12px;
-    border: 2px solid rgba($orange, 0.3);
+    max-height: 560px;
   }
 }
 
@@ -126,3 +124,48 @@ p {
     height: 100%;
   }
 }
+
+.turquoise-text {
+  color: $turquoise;
+}
+.orange-text {
+  color: $orange;
+}
+.plum-text {
+  color: $plum;
+}
+
+.copy-link {
+  color: $orange;
+  cursor: pointer;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+    color: lighten($orange, 10%);
+  }
+}
+
+.copy-toast {
+  position: fixed;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%) translateY(100px);
+  background: $bg-black;
+  color: $turquoise;
+  border: 1px solid $turquoise;
+  border-radius: 8px;
+  padding: 0.65rem 1.5rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  z-index: 1000;
+  opacity: 0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  pointer-events: none;
+
+  &--show {
+    transform: translateX(-50%) translateY(0);
+    opacity: 1;
+  }
+}
+

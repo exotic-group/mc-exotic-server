@@ -31,4 +31,41 @@ document.addEventListener('DOMContentLoaded', function () {
       });
     });
   });
+
+  var copyLinks = document.querySelectorAll('.copy-link');
+
+  copyLinks.forEach(function (link) {
+    link.addEventListener('click', function (e) {
+      e.preventDefault();
+      var href = link.getAttribute('href');
+      if (!href) return;
+
+      navigator.clipboard.writeText(href).then(function () {
+        showToast('Link copiado!');
+      }).catch(function () {
+        showToast('Erro ao copiar');
+      });
+    });
+  });
+
+  function showToast(message) {
+    var existing = document.querySelector('.copy-toast');
+    if (existing) existing.remove();
+
+    var toast = document.createElement('div');
+    toast.className = 'copy-toast';
+    toast.textContent = message;
+    document.body.appendChild(toast);
+
+    requestAnimationFrame(function () {
+      toast.classList.add('copy-toast--show');
+    });
+
+    setTimeout(function () {
+      toast.classList.remove('copy-toast--show');
+      setTimeout(function () {
+        toast.remove();
+      }, 300);
+    }, 2000);
+  }
 });
