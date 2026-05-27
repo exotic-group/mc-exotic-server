@@ -1,7 +1,7 @@
 title: Exotic Server
 description: Minecraft Exotic Server — tutorials, commands, and live map
-baseurl: ""
-url: ""
+baseurl: "/mc-exotic-server"
+url: "https://exotic-group.github.io"
 
 markdown: kramdown
 
