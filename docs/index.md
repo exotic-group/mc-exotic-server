@@ -11,7 +11,7 @@ permalink: /
 {% capture intro_content %}
 
 <h1>Bem-vindo ao Exotic Server!</h1>
-<h2>Endereço do servidor: <a class="orange-text copy-link" href="play.exoticservers.net">play.exoticservers.net</a></h2>
+<h2>Endereço do servidor: <a class="orange-text copy-link" href="exotic.playit.plus">exotic.playit.plus</a></h2>
 
 <p><strong>Java Edition</strong> (26.1+)</p>
 
@@ -37,6 +37,7 @@ permalink: /
 {% include command.html cmd='/tpahere &lt;jogador&gt;' desc='Solicita teleporte de outro jogador para sua localização.' %}
 {% include command.html cmd='/tpa accept' desc='Aceita pedido de TP de outro Jogador.' %}
 {% include command.html cmd='/tpa deny' desc='Recusa pedido de TP de outro Jogador.' %}
+{% include command.html cmd='/flan menu' desc='Menu de Claim (terreno), precisa esta dentro de um terreno para funcionar direito.' %}
 {% include command.html cmd='Claim de Terreno' desc='Para realizar o claim de terreno é necessário usar uma enxada de ouro.' %}
 <a href="https://wiki.blazing-coop.net/flan/user_guides/Getting-Started" class="turquoise-text">Tutorial Claim</a>
 
